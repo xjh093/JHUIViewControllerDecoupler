@@ -2,7 +2,7 @@
 UIViewController Decouple
 
 ```
-/// string -> controller, with some parameters.
+/// string -> controller, with some parameters.return `nil` if not exist.
 + (UIViewController *)jh_controllerFromString:(NSString *)string
                                      paramter:(NSDictionary *)dictionary;
 ```
