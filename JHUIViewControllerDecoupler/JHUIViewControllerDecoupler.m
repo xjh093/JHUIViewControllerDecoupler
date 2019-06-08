@@ -52,6 +52,7 @@
 
 + (UIViewController *)jh_notice_vc:(NSString *)string
 {
+#if DEBUG
     UIViewController *vc = [[UIViewController alloc] init];
     vc.view.backgroundColor = [UIColor whiteColor];
     vc.title = @"oops~😅";
@@ -76,6 +77,9 @@
         label;
     })];
     return vc;
+#else
+    return nil;
+#endif
 }
 @end
 
